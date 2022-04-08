@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --neonverde: hsl(150, 100%, 66%);
+    --preto: #202632;
+    --cinza: #313b47;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--preto);
+}
+
+.card {
+    width: 40%;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: var(--cinza);
+    filter: drop-shadow(0 0 0.75rem var(--neonverde));
+}
+
+.card-header {
+    width: 100%;
+    color: var(--neonverde);
+    font-size: 10px;
+    padding: 15px 0px;
+    
+}
+
+.card-paragraph-body {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #cfe4e9;
+    text-align: center;
+    font-style: italic;
+}
+
+.card-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--neonverde);
+}
+
+.m-top {
+    margin-top: 45px;
+}
+
+.my-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.py-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: var(--preto);
+}
+
+@media (min-width: 385px) {
+    .card {
+        width: 85%;
+        height: 320px;
+        filter: drop-shadow(0 0 0.75rem var(--preto));
+    }
+
+    .m-top {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 545px) {
+    .card {
+        width: 85%;
+        height: 320px;
+    }
+
+    .m-top {
+        margin-top: 45px;
+    }
+
+    .card-paragraph-body {
+        font-size: 1.45rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        width: 40%;
+        height: 320px;
+    }
+
+    .m-top {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .m-top {
+        margin-top: 45px;
+    }
+}
+
